@@ -1,0 +1,50 @@
+name: 'Spam Filter'
+description: 'Delete or hide comments matching exact messages or from specific users, with built‐in defaults.'
+author: 'Your Name <you@example.com>'
+
+inputs:
+  repo-token:
+    description: 'GitHub token (usually ${{ secrets.GITHUB_TOKEN }}).'
+    required: true
+
+  mode:
+    description: 'Action to take: `delete` or `hide`.'
+    required: true
+    default: 'delete'
+    options:
+      - delete
+      - hide
+
+  disable-default-blocklist:
+    description: 'Set to `true` to ignore the built-in defaults entirely.'
+    required: false
+    default: 'false'
+
+  config-file:
+    description: |
+      Path to a **JSON or YAML** file in your repo that **must** contain two top-level arrays:
+      ```yaml
+      users:
+        - alice
+        - bob
+
+      messages:
+        - "Exact message one."
+        - "Exact message two!"
+      ```
+    required: false
+    default: '.github/spam-filter-config.yml'
+
+  classifier:
+    description: |
+      When hiding comments, GraphQL `minimizeComment` classifier (e.g. `OUTDATED`, `RESOLVED`).
+    required: false
+    default: 'OUTDATED'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
+
+branding:
+  icon: 'trash'
+  color: 'red'

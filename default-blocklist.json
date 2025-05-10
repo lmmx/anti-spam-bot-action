@@ -1,0 +1,14 @@
+{
+  "users": [
+    "spam_bot1",
+    "spam_bot2"
+  ],
+  "messages": [
+    "The performance optimizations here are quite clever. Nice engineering work!",
+    "Great implementation of this feature. I particularly like the approach to error handling.",
+    "Interesting solution to this problem! I've been working on similar challenges recently.",
+    "Excellent contribution to open source! The community will benefit greatly from this.",
+    "I'm impressed by the modularity of this codebase. Makes it very maintainable.",
+    "This is a well-structured codebase. I appreciate the clean separation of concerns."
+  ]
+}

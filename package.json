@@ -1,0 +1,12 @@
+{
+  "name": "spam-filter-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to delete or hide spam comments based on exact matches",
+  "main": "index.js",
+  "author": "Louis Maddox",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}

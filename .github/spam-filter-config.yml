@@ -1,0 +1,8 @@
+# .github/spam-filter-config.yml
+users:
+  - spam_bot3
+  - other_bot
+
+messages:
+  - "Yet another exact spam message!"
+  - "One more two-sentence spam example to catch."
