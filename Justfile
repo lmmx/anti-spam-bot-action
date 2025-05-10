@@ -46,4 +46,7 @@ code-quality-fix:
     just fix-eof-ws
 
 act:
-    ./run_act.sh
+    ./run_act.sh remove_spam
+
+dep-check:
+    ./run_act.sh check_deps

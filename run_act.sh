@@ -30,7 +30,7 @@ bash ./build.sh
 
 # Run the local test
 echo -e "${BLUE}Testing the action with act...${NC}"
-act --job remove_spam \
+act --job $1 \
     --eventpath events/issue_comment.created.json \
     --bind \
     -s GITHUB_TOKEN=$GITHUB_TOKEN
