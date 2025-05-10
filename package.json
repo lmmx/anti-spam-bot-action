@@ -7,10 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@actions/github-script": "github:actions/github-script#v7.0.1"
-  },
-  "devDependencies": {
-    "@actions/core": "^1.11.1",
-    "@actions/github-script": "github:actions/github-script#v7.0.1"
+    "@actions/github-script": "github:actions/github-script#v7.0.1",
+    "js-yaml": "^4.1.0"
   }
 }
