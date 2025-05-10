@@ -1,10 +1,10 @@
 name: 'Spam Filter'
 description: 'Delete or hide comments matching exact messages or from specific users, with built‐in defaults.'
-author: 'Your Name <you@example.com>'
+author: 'Louis Maddox'
 
 inputs:
   repo-token:
-    description: 'GitHub token (usually ${{ secrets.GITHUB_TOKEN }}).'
+    description: 'GitHub token (usually provided via the GITHUB_TOKEN secret).'
     required: true
 
   mode:

@@ -1,0 +1,1 @@
+- edit mode, helpful to test (do not want to test marking my own account comments as spam)

@@ -1,8 +1,8 @@
 {
   "comment": {
     "id": 123456,
-    "node_id": "MDEyOklzc3VlQ29tbWVudDEyMzQ1Ng==",
     "body": "The performance optimizations here are quite clever. Nice engineering work!",
+    "node_id": "MDEyOklzc3VlQ29tbWVudDEyMzQ1Ng==",
     "user": { "login": "some_bot" }
   },
   "repository": {

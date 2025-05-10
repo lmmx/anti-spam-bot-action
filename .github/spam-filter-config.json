@@ -1,4 +1,3 @@
-// .github/spam-filter-config.json
 {
   "users": ["spam_bot3", "other_bot"],
   "messages": [

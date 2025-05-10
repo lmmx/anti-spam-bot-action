@@ -26,7 +26,7 @@ jobs:
   filter:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run spam filter
         uses: your-org/spam-filter-action@v1
         with:

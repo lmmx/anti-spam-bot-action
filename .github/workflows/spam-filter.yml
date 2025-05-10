@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Run spam filter
-        uses: your-org/spam-filter-action@test-v1    # or @v1 for your published release
+        uses: lmmx/anti-spam-bot-action@test-v2    # or @v1 for published release
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          mode: delete                                # or 'hide'
+          mode: delete                                # or 'hide' or 'edit'
           # disable-default-blocklist: 'true'        # uncomment to skip built-ins
           config-file: .github/spam-filter-config.yml
           classifier: OUTDATED                        # only needed for 'hide' mode
