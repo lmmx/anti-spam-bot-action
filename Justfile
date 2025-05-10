@@ -31,7 +31,7 @@ fix-eof-ws mode="":
     whitespace-format --add-new-line-marker-at-end-of-file \
           --new-line-marker=linux \
           --normalize-new-line-markers \
-          --exclude ".git/|.json$|.lock$" \
+          --exclude ".git/|node_modules/|.json$|.lock$" \
           $ARGS \
           .
 
@@ -44,3 +44,6 @@ code-quality-fix:
     taplo lint
     taplo format
     just fix-eof-ws
+
+act:
+    ./run_act.sh
