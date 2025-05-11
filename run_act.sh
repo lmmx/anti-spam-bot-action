@@ -30,8 +30,10 @@ bash ./build.sh
 
 # Run the local test
 echo -e "${BLUE}Testing the action with act...${NC}"
-act --job $1 \
+act issue_comment \
+    --job $1 \
     --eventpath events/issue_comment.created.json \
+    --dryrun \
     --bind \
     -s GITHUB_TOKEN=$GITHUB_TOKEN
     # --verbose
