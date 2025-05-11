@@ -1,1 +1,2 @@
 - edit mode, helpful to test (do not want to test marking my own account comments as spam)
+- block mode, ability to block user from org is in the API: https://docs.github.com/en/rest/orgs/blocking?apiVersion=2022-11-28
